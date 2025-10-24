@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    # 'localhost'가 아닌 docker-compose.yml에 정의할 MariaDB 서비스 이름(예: mariadb-db)
+    url: jdbc:mariadb://mariadb-db:3306/your_database_name
+    username: your_db_user
+    password: your_db_password
+    driver-class-name: org.mariadb.jdbc.Driver
