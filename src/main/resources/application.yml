@@ -2,3 +2,5 @@
 spring:
   application:
     name: handon-bizmsg
+  profiles:
+    active: local

@@ -2,11 +2,12 @@
 # (이전 단계에서 설정한 Datasource)
 # MyBatis가 이 정보를 자동으로 사용합니다.
 # ---------------------------------
-datasource:
-  driver-class-name: org.mariadb.jdbc.Driver
-  url: jdbc:mariadb://54.180.226.148:3306/htt_poc?useSSL=false&serverTimezone=Asia/Seoul
-  username: rock
-  password: Rock2423!@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://54.180.226.148:3306/htt_poc?useSSL=false&serverTimezone=Asia/Seoul
+    username: rock
+    password: Rock2423!@
 
 # ---------------------------------
 # MyBatis 설정
