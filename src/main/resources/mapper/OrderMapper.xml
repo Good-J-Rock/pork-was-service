@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.notify.mapper.OrderMapper">
+
+    <resultMap id="orderResultMap" type="com.handonbizmsg.domain.Order">
+        <id property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="buyerName" column="buyer_name"/>
+        <result property="buyerPhone" column="buyer_phone"/>
+        <result property="productName" column="product_name"/>
+        <result property="totalAmount" column="total_amount"/>
+        <result property="orderDate" column="order_date"/>
+        <result property="status" column="status"/>
+    </resultMap>
+
+    <insert id="insertOrder" parameterType="com.handonbizmsg.domain.Order">
+        INSERT INTO orders (order_id, buyer_name, buyer_phone, product_name, total_amount, order_date, status)
+        VALUES (#{orderId}, #{buyerName}, #{buyerPhone}, #{productName}, #{totalAmount}, #{orderDate}, #{status})
+    </insert>
+
+    <select id="findByOrderId" resultMap="orderResultMap">
+        SELECT * FROM orders WHERE order_id = #{orderId}
+    </select>
+
+    <select id="findAll" resultMap="orderResultMap">
+        SELECT * FROM orders ORDER BY order_date DESC
+    </select>
+
+</mapper>
