@@ -5,9 +5,10 @@
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://54.180.226.148:3306/htt_poc?useSSL=false&serverTimezone=Asia/Seoul
-    username: rock
-    password: Rock2423!@
+#    url: jdbc:mariadb://154.180.226.148:3306/htt_poc?useSSL=false&serverTimezone=Asia/Seoul
+    url: jdbc:mariadb://localhost:3306/pork_v1?useSSL=false&serverTimezone=Asia/Seoul
+    username: root
+    password: maria_gdgf2423!
 
 # ---------------------------------
 # MyBatis 설정

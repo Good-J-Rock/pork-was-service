@@ -8,9 +8,16 @@ spring:
 naver:
   client-id: 6c9s3UWLd4sZiudJ5pRufI
   client-secret: $2a$04$i4WY5p9g6YhAAQKyLO89He
-  api-url: https://api.commerce.naver.com/external/
+  api-url: https://api.commerce.naver.com/external
 
-kakao:
-  api-url: https://kapi.kakao.com/v1/api/talk/friends/message/send
-  access-token: YOUR_KAKAO_ACCESS_TOKEN
-  template-code: ORDER_CONFIRM
+#kakao:
+#  api-url: https://kapi.kakao.com/v1/api/talk/friends/message/send
+#  access-token: YOUR_KAKAO_ACCESS_TOKEN
+#  template-code: ORDER_CONFIRM
+#
+
+aligo:
+  user-id: qwe789
+  api-key: j3395t4ndpqn68aq6r53i4603t8taxgv
+  sender-key: 10637e4964f3affb4ac3509bfcd3cf48f37e3f9a
+  sender-number: 010-4814-8209
